@@ -1,0 +1,16 @@
+<div class="login">
+    <div class="nav">
+        <img class="logo" src="../../../assets/LogoColour.png" alt="Allegiance">
+    </div>
+    <div class="login-content">
+        <h1>Welcome to Allegiance</h1>
+        <p>Login in to start</p>
+        <div class="login-form">
+            <form (submit)="onLogin()">
+                <input type="text" name="username" [(ngModel)]="username" placeholder="User Name" />
+                <input type="password" name="password" [(ngModel)]="password" placeholder="Password" />
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

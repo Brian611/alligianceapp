@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <app-progressbar [percentageComplete]="percentageComplete"></app-progressbar>
+    <div class="content">
+        <div class="body-content">
+            <div class="questions-content">
+                <div *ngIf="question1">
+                    <app-question1></app-question1>
+                </div>
+                <div *ngIf="question2">
+                    <app-question2></app-question2>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="playzone">
+            <app-playzone></app-playzone>
+        </div>
+    </div>
+    <div *ngIf="question1; then q1 else q2"></div>
+</div>
+
+<ng-template #q1>
+    <app-footer [q1]="question1" [playzone]="playzone" (onNext)="onQ1Next()" (onPrev)="onPrev()"></app-footer>
+</ng-template>
+<ng-template #q2>
+    <app-footer [q1]="question1" [playzone]="playzone" (onNext)="onQ2Next()" (onPrev)="onPrev()"></app-footer>
+</ng-template>

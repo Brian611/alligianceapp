@@ -1,0 +1,61 @@
+/* start of desktop styles */
+@import "~nouislider/distribute/nouislider.min.css";
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.info, .success, .warning, .error {
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 0;
+    padding:1px 5px 1px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+}
+    .info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('./assets/info.png');
+}
+    .success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image:url('./assets/success.png');
+    }
+    .warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('./assets/warning.png');
+    }
+    .error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('./assets/error.png');
+    }
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+    .wrapper{
+        max-width: 100%;
+        margin: 0 auto;
+       
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* start of medium tablet styles */
+    .wrapper{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    /* start of phone styles */
+    .wrapper{
+        max-width: 100%;
+        background-color: grey;
+    }
+}

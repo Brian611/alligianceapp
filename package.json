@@ -1,0 +1,31 @@
+{
+  "name": "allegianceapp",
+  "version": "1.0.0",
+  "description": "Retirement Savings Contibution App",
+  "main": "app",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "author": "Brian Pooe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian611/alligianceapp.git"
+},
+  "bugs": {
+    "url": "https://github.com/Brian611/alligianceapp/issues"
+  },
+  "homepage": "https://github.com/Brian611/alligianceapp#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.13.5",
+    "nouislider": "^10.1.0",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.1.0"
+  }
+}

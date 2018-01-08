@@ -1,0 +1,114 @@
+.playzone{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.playzone-heading{
+    font-size: 1em;
+    color: #4a7693;
+    text-align: center;
+}
+
+.chart{
+    display: grid;
+    grid-template-columns: 1f 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "chart-container panel-container"
+    "sliders sliders";
+    grid-gap: 0.5em;
+}
+
+.chart-container{
+    grid-area: chart-container;
+    height: 210px;
+    width: 800px;
+}
+
+.panel-container{
+    grid-area: panel-container;
+    justify-self: left;
+}
+
+.sliders{
+    grid-area: sliders;
+    margin-top: 60px;
+}
+
+.panel {
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.panel-default {
+    border-color: #ddd;
+}
+.panel-default>.panel-heading {
+    color: #4a7693;
+    background-color: #e6e6e6;
+    border-color: #ddd;
+    text-align: center;
+}
+.panel-heading {
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.panel-body {
+    text-align: center;
+    padding: 15px;
+}
+
+.panel-body p{
+    line-height: 0.2em;
+}
+
+.panel-body br{
+    line-height: 0.2em;
+}
+
+svg.highcharts-root{
+    width: 50px !important;
+    height: 50px !important;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    margin: 15px;
+}
+
+.left {
+  width: 25%;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.right {
+    width: 25%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+.middle {
+  width: 30%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.noUi-base, .noUi-handle {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    background-color: violet;
+}
+

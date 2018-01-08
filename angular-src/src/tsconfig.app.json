@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../client",
+    "baseUrl": "./",
+    "module": "es2015",
+    "types": ["node"],
+    "typeRoots": [
+      // add path to @types
+      "node_modules/@types"
+   ]
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}

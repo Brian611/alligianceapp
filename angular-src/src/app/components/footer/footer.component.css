@@ -1,0 +1,54 @@
+.btn-class{
+    position: relative;
+    display: inline-block;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    font-family: Arial;
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    padding: 5px 50px;
+    box-shadow: inset 0 1px 0 0 #45E6FF,inset 0 -1px 0 0 #E3C852;
+    -moz-box-shadow: inset 0 1px 0 0 #45E6FF,inset 0 -1px 0 0 #E3C852;
+    -webkit-box-shadow: inset 0 1px 0 0 #45E6FF,inset 0 -1px 0 0 #E3C852;
+    background-color: #4B7794;
+}
+
+.btn-class:hover{
+    border: none;
+    color: #FFFFFF;
+    box-shadow: inset 0 1px 0 0 #6EECFF,inset 0 -1px 0 0 #E3C852;
+    -moz-box-shadow: inset 0 1px 0 0 #6EECFF,inset 0 -1px 0 0 #E3C852;
+    -webkit-box-shadow: inset 0 1px 0 0 #6EECFF,inset 0 -1px 0 0 #E3C852;
+    background-color: #4B7780;
+}
+
+.btn-arrow-left{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+
+}
+
+.btn-arrow-right{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.btn-bottom-left{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 10px;
+}
+
+.btn-bottom-right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+}

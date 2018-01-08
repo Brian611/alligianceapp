@@ -1,0 +1,31 @@
+.heading{
+    font-size: 2.5em;
+    color: #4a7693;
+}
+
+.question-text{
+    font-size: 1.5em;
+}
+
+.answer{
+    color: #4a7693;
+    font-weight: bold;
+}
+
+.answer input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #4a7693;
+    font-size: 0.8em;
+    text-align: center;
+    width: 100px;
+}
+
+.age{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #4a7693;
+    width: 50px !important;
+}
